@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>个人主页</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 添加viewport元标签，适配移动端设备 -->
+    <link rel="stylesheet"  href="tupian.css"> <!-- 添加font-awesome库 -->
+    <style>
+      body
+      {
+        font-family: Arial, sans-serif; /* 设置字体 */
+        margin: 0; /* 清除页面的默认边距和内边距 */
+
+      }
+
+      nav ul {
+        list-style: none; /* 清除列表样式 */
+        display: flex; /* 将ul设置为flex容器 */
+        justify-content: space-between; /* 水平对齐方式，使列表项目之间有间隙 */
+        align-items: center; /* 垂直对齐方式，使导航栏居中 */
+      }
+
+      nav li {
+        margin-right: 20px; /* 添加间隔 */
+        font-size: 20px; /* 设置字体大小 */
+      }
+
+      section {
+        width: 80%; /* 设置主要内容区域的宽度 */
+        margin: 0 auto; /* 让内容居中显示 */
+        padding: 100px;
+        display: flex; /* 设置该区域为flex容器 */
+        justify-content: space-between; /* 根据空间的大小，自动对齐 */
+        flex-wrap: wrap; /* 自动换行 */
+      }
+
+      .card {
+        background-color: #f2f2f2;
+        padding: 20px;
+        width: 30%;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+      }
+
+
+      img {
+        max-width: 100%;
+      }
+
+
+
+      /* 添加响应式设计 */
+      @media only screen and (max-width: 1200px) {
+        section .card {
+          width: 45%;
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        section .card {
+          width: 100%;
+        }
+      }
+
+      /* 添加动画效果 */
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+      }
+         /* 使用字体图标 */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .social-icons a {
+    margin-right: 10px;
+    font-size: 30px;
+    color: #666666;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .social-icons a:hover {
+    color: #333333;
+  }
+
+  /* 使用背景图片 */
+  .hero {
+    height: 500px;
+    background-image: url('beijing.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+  }
+
+     h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 50px;
+    max-width: 50%;
+    margin: 0 auto;
+    line-height: 1.5;
+    opacity: 0.8;
+  }
+
+</style>
+
+</head>
+<body>
+<main>
+<!-- 您可以将此代码插入到<body>标记中 -->
+
+<section >
+
+<div  style="margin: 0 auto; ">
+    <h1>欢迎来到我的主页</h1>
+      <p>版权所有 © 2023 刘力嘉</p>
+    <p>made in liulijia</p>
+</div>
+</section>
+    <section>
+        <div class="card" style="margin:0 auto">
+            <img src="th.jpg" alt="头像">
+        </div>
+        </section>
+<section >
+  <div class="card">
+    <h1>我的简介</h1>
+    <p>名字：刘力嘉</p>
+      <p>性别：男</p>
+      <p>生日：2004.03.06</p>
+      <p>学校：福建理工大学</p>
+      <p>QQ：599471314</p>
+      <p>居住地：重庆</p>
+  </div>
+  <div class="card">
+    <h2>关于我</h2>
+    <p>会java python c++等语言</p>
+      <p>爱好 篮球 羽毛球 乒乓球 排球 网球</p>
+      <p>喜欢 流行音乐 嘻哈音乐 民谣</p>
+      <h2>我的经验</h2>
+      <p>做过学生选课管理系统设计</p>
+      <p>参加过泰迪杯比赛其数据预测项目</p>
+      <h2>自我评价</h2>
+      <p>是一个心态放平，与人和善，乐观，社杂分子，在与同学进行设计交流时是一个偏向于实际的人其做好自己的事即可，其喜欢运动其最爱好打篮球。其关键就是享受人生</p>
+
+
+  </div>
+
+</section>
+    </main>
+
+</body>
+</html>
